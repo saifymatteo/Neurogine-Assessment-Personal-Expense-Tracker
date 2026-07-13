@@ -30,6 +30,10 @@ Example:
 // Ignore the rest
 ```
 
+## Build
+
+1. Ensure Flutter 3.44.0 or above is installed
+
 ## AI Usage
 
 This project was assisted with autocomplete AI via VSCode Github Copilot (free tier). Everything else is solely written by hand.
