@@ -16,6 +16,8 @@ class _NeurogineAppState extends State<NeurogineApp> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       routerConfig: router.config(),
+      localizationsDelegates: NeurogineLocalizations.localizationsDelegates,
+      supportedLocales: NeurogineLocalizations.supportedLocales,
     );
   }
 }
