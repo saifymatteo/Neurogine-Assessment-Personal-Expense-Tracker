@@ -36,6 +36,10 @@ This project make use of barrel file, example is `lib/lib.dart` where the file e
 // Ignore the rest
 ```
 
+## Localizations
+
+Currently only support English language. To add new language, you can add copy current `lib/l10n/app_neurogine_en.arb` to new file with different suffix. Example: creating a Malay localizations will require a file called `lib/l10n/app_neurogine_ms.arb`, then change the values inside the files.
+
 ## Build
 
 1. Ensure Flutter 3.44.0 or above is installed

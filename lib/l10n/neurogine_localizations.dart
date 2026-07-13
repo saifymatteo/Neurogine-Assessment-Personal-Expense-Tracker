@@ -97,11 +97,11 @@ abstract class NeurogineLocalizations {
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[Locale('en')];
 
-  /// No description provided for @stringHello.
+  /// No description provided for @appTitle.
   ///
   /// In en, this message translates to:
-  /// **'Hello'**
-  String get stringHello;
+  /// **'Personal Expense Tracker'**
+  String get appTitle;
 }
 
 class _NeurogineLocalizationsDelegate

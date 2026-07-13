@@ -9,5 +9,5 @@ class NeurogineLocalizationsEn extends NeurogineLocalizations {
   NeurogineLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get stringHello => 'Hello';
+  String get appTitle => 'Personal Expense Tracker';
 }
