@@ -7,8 +7,9 @@ Flutter app made for [Neurogine](https://www.neurogine.com/)'s technical assessm
 ## Stack
 
 1. Provider with `ChangeNotifierProvider` - for simple approach
-2. GetIt - for dependency injection
-3. AutoRoute - for type-safe navigation
+2. AutoRoute - for type-safe navigation
+3. Hive CE - for persistent storage
+4. Freezed - for object model generator
 
 ## Structure
 
