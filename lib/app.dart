@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'routes/route.dart';
+import 'lib.dart';
 
 class NeurogineApp extends StatefulWidget {
   const NeurogineApp({super.key});

@@ -20,6 +20,12 @@ Example:
 - `ft_home/page.dart` - Homepage UI
 - `ft_home/state.dart` - Business logic for Homepage UI
 
+### Note
+
+This project make use of barrel file, example is `lib/lib.dart` where the file export commonly used file
+
+### Tree Structure
+
 ```tree
 ├───lib
 │   ├───main.dart // Flutter entry
