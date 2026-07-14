@@ -13,6 +13,12 @@ See the [web demo](https://neurogine.saifulmashuri.com/) here. Or download [late
 3. [Hive CE](https://pub.dev/packages/hive_ce) - for persistent storage
 4. [Freezed](https://pub.dev/packages/freezed) - for object model generator
 
+## Architecture
+
+Project structure was adapted from Ukuya Sdn. Bhd.'s architectural pattern where they mainly use `page.dart` as UI and `state.dart` as business logic with data storage.
+
+This project made a change by utilising `sealed class` to hold UI's state and `repository.dart` to handle the business logic, thus separating data and business logic.
+
 ## Structure
 
 Structure follow simple pattern where as everything user see will be in `lib/ui` folder. Each folder have prefix to determine the type of the file themselves.
@@ -51,12 +57,6 @@ This project make use of barrel file, example is `lib/lib.dart` where the file e
 
 // Ignore the rest
 ```
-
-## Architecture
-
-Project structure was adapted from Ukuya Sdn. Bhd.'s architectural pattern where they mainly use `page.dart` as UI and `state.dart` as business logic with data storage.
-
-This project made a change by utilising `sealed class` to hold UI's state and `repository.dart` to handle the business logic, thus separating data and business logic.
 
 ## Localizations
 
