@@ -2,6 +2,10 @@
 
 Flutter app made for [Neurogine's technical assessment](https://github.com/kt-neurogine/personal-expense-tracker).
 
+## Release
+
+See the [web demo](https://neurogine.saifulmashuri.com/) here. Or download [latest APK/Appbundle](https://github.com/saifymatteo/Neurogine-Assessment-Personal-Expense-Tracker/releases/latest)
+
 ## Stack
 
 1. [Provider](https://pub.dev/packages/provider) with `ChangeNotifierProvider` - for simple approach
