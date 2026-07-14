@@ -2,10 +2,9 @@ import 'package:auto_route/auto_route.dart';
 import 'package:clock/clock.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:intl/intl.dart';
-import 'package:personal_expense_tracker/lib.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../lib.dart';
 import 'repository.dart';
 
 class NeurogineAddExpenseDialog extends StatelessWidget {
@@ -51,7 +50,7 @@ class _Content extends StatelessWidget {
                     controller: repository.nameTextController,
                     focusNode: repository.nameNode,
                     keyboardType: TextInputType.text,
-                    decoration: const InputDecoration(labelText: 'Name'),
+                    decoration: InputDecoration(labelText: l10n.inputFieldName),
                     onChanged: repository.nameOnChanged,
                   ),
                 ),
@@ -64,7 +63,9 @@ class _Content extends StatelessWidget {
                     keyboardType: TextInputType.numberWithOptions(
                       decimal: true,
                     ),
-                    decoration: const InputDecoration(labelText: 'Amount'),
+                    decoration: InputDecoration(
+                      labelText: l10n.inputFieldAmount,
+                    ),
                     inputFormatters: [
                       FilteringTextInputFormatter.allow(
                         RegExp(r'^\d+\.?\d{0,2}'),
@@ -84,14 +85,10 @@ class _Content extends StatelessWidget {
                       child: Row(
                         spacing: 8,
                         children: [
-                          Text('Date:'),
+                          Text('${l10n.inputFieldDate}:'),
                           const Icon(Icons.calendar_today),
                           if (repository.dateTime != null)
-                            Text(
-                              DateFormat.yMMMMEEEEd().format(
-                                repository.dateTime!,
-                              ),
-                            ),
+                            Text(repository.dateTime!.toDisplay()),
                         ],
                       ),
                     ),

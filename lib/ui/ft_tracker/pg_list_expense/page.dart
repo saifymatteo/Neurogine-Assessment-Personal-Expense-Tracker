@@ -1,12 +1,11 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:intl/intl.dart';
-import 'package:personal_expense_tracker/ui/ft_tracker/pg_list_expense/dg_search/dialog.dart';
 import 'package:provider/provider.dart';
 
 import '../../../lib.dart';
 import 'dg_add_expense/dialog.dart';
+import 'dg_search/dialog.dart';
 import 'repository.dart';
 import 'state.dart';
 
@@ -44,14 +43,14 @@ class _ContentState extends State<_Content> {
   @override
   Widget build(BuildContext context) {
     return Consumer<NeurogineHomeExpenseListRepository>(
-      builder: (context, state, _) {
+      builder: (context, repository, _) {
         return Stack(
           children: [
             Positioned.fill(
-              child: switch (state.state) {
+              child: switch (repository.state) {
                 NeurogineHomeExpenseListStateLoading() => Padding(
                   padding: const EdgeInsets.all(16),
-                  child: CircularProgressIndicator(),
+                  child: Center(child: CircularProgressIndicator()),
                 ),
                 NeurogineHomeExpenseListStateError(:final message) => Padding(
                   padding: const EdgeInsets.all(16),
@@ -101,6 +100,8 @@ class _ExpenseItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
+
     return Row(
       children: [
         Expanded(
@@ -108,8 +109,8 @@ class _ExpenseItem extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(item.name, style: TextStyle(fontSize: 18)),
-              Text('Amount: ${item.amountDisplay}'),
-              Text('Date: ${DateFormat.yMMMMd().format(item.date)}'),
+              Text('${l10n.inputFieldAmount}: ${item.amount.toCurrency()}'),
+              Text('${l10n.inputFieldDate}: ${item.date.toDisplayFull()}'),
             ],
           ),
         ),

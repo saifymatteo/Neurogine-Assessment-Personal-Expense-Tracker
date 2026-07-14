@@ -103,6 +103,18 @@ abstract class NeurogineLocalizations {
   /// **'Personal Expense Tracker'**
   String get appTitle;
 
+  /// No description provided for @navigationHome.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get navigationHome;
+
+  /// No description provided for @navigationSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Summary'**
+  String get navigationSummary;
+
   /// No description provided for @dialogAddNewExpense.
   ///
   /// In en, this message translates to:
@@ -120,6 +132,30 @@ abstract class NeurogineLocalizations {
   /// In en, this message translates to:
   /// **'Search Expenses'**
   String get dialogSearchExpenses;
+
+  /// No description provided for @inputFieldName.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get inputFieldName;
+
+  /// No description provided for @inputFieldAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount'**
+  String get inputFieldAmount;
+
+  /// No description provided for @inputFieldDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Date'**
+  String get inputFieldDate;
+
+  /// No description provided for @inputFieldSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get inputFieldSearch;
 
   /// No description provided for @tooltipAddNewExpense.
   ///
@@ -144,6 +180,30 @@ abstract class NeurogineLocalizations {
   /// In en, this message translates to:
   /// **'Search expenses'**
   String get tooltipSearchExpense;
+
+  /// No description provided for @summaryAmountSpent.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount Spent'**
+  String get summaryAmountSpent;
+
+  /// No description provided for @summaryTotalTransaction.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Transaction'**
+  String get summaryTotalTransaction;
+
+  /// No description provided for @summaryLatestTransaction.
+  ///
+  /// In en, this message translates to:
+  /// **'Latest Transaction'**
+  String get summaryLatestTransaction;
+
+  /// No description provided for @summaryEarliestTransaction.
+  ///
+  /// In en, this message translates to:
+  /// **'Earliest Transaction'**
+  String get summaryEarliestTransaction;
 
   /// No description provided for @buttonSubmit.
   ///

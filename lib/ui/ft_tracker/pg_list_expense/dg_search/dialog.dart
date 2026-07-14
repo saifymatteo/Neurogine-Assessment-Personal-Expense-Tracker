@@ -1,8 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:personal_expense_tracker/lib.dart';
 import 'package:provider/provider.dart';
 
+import '../../../../lib.dart';
 import 'repository.dart';
 
 class NeurogineSearchExpenseDialog extends StatelessWidget {
@@ -47,7 +47,9 @@ class _Content extends StatelessWidget {
                     controller: repository.searchTextController,
                     focusNode: repository.searchNode,
                     keyboardType: TextInputType.text,
-                    decoration: const InputDecoration(labelText: 'Search'),
+                    decoration: InputDecoration(
+                      labelText: l10n.inputFieldSearch,
+                    ),
                     onChanged: repository.searchOnChanged,
                     onSubmitted: (value) => _submitExpense(context),
                   ),

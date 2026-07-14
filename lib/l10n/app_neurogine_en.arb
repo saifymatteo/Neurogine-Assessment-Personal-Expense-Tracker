@@ -1,11 +1,21 @@
 {
   "appTitle": "Personal Expense Tracker",
+  "navigationHome": "Home",
+  "navigationSummary": "Summary",
   "dialogAddNewExpense": "Add New Expense",
   "dialogEditExpense": "Edit Expense",
   "dialogSearchExpenses": "Search Expenses",
+  "inputFieldName": "Name",
+  "inputFieldAmount": "Amount",
+  "inputFieldDate": "Date",
+  "inputFieldSearch": "Search",
   "tooltipAddNewExpense": "Add new expense",
   "tooltipGenerateExpenses": "Generate new expenses",
   "tooltipDeleteAllExpenses": "Delete all expenses",
   "tooltipSearchExpense": "Search expenses",
+  "summaryAmountSpent": "Amount Spent",
+  "summaryTotalTransaction": "Total Transaction",
+  "summaryLatestTransaction": "Latest Transaction",
+  "summaryEarliestTransaction": "Earliest Transaction",
   "buttonSubmit": "SUBMIT"
 }

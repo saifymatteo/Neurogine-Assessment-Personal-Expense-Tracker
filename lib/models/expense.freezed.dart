@@ -206,8 +206,8 @@ return $default(_that.id,_that.name,_that.amount,_that.date);case _:
 /// @nodoc
 @JsonSerializable()
 
-class _NeurogineExpenseModel extends NeurogineExpenseModel {
-  const _NeurogineExpenseModel({required this.id, required this.name, required this.amount, required this.date}): super._();
+class _NeurogineExpenseModel implements NeurogineExpenseModel {
+  const _NeurogineExpenseModel({required this.id, required this.name, required this.amount, required this.date});
   factory _NeurogineExpenseModel.fromJson(Map<String, dynamic> json) => _$NeurogineExpenseModelFromJson(json);
 
 @override final  String id;

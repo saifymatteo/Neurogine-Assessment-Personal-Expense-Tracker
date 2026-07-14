@@ -12,6 +12,12 @@ class NeurogineLocalizationsEn extends NeurogineLocalizations {
   String get appTitle => 'Personal Expense Tracker';
 
   @override
+  String get navigationHome => 'Home';
+
+  @override
+  String get navigationSummary => 'Summary';
+
+  @override
   String get dialogAddNewExpense => 'Add New Expense';
 
   @override
@@ -19,6 +25,18 @@ class NeurogineLocalizationsEn extends NeurogineLocalizations {
 
   @override
   String get dialogSearchExpenses => 'Search Expenses';
+
+  @override
+  String get inputFieldName => 'Name';
+
+  @override
+  String get inputFieldAmount => 'Amount';
+
+  @override
+  String get inputFieldDate => 'Date';
+
+  @override
+  String get inputFieldSearch => 'Search';
 
   @override
   String get tooltipAddNewExpense => 'Add new expense';
@@ -31,6 +49,18 @@ class NeurogineLocalizationsEn extends NeurogineLocalizations {
 
   @override
   String get tooltipSearchExpense => 'Search expenses';
+
+  @override
+  String get summaryAmountSpent => 'Amount Spent';
+
+  @override
+  String get summaryTotalTransaction => 'Total Transaction';
+
+  @override
+  String get summaryLatestTransaction => 'Latest Transaction';
+
+  @override
+  String get summaryEarliestTransaction => 'Earliest Transaction';
 
   @override
   String get buttonSubmit => 'SUBMIT';

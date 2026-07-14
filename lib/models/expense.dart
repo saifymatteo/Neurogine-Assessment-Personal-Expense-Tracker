@@ -15,12 +15,8 @@ sealed class NeurogineExpenseModel with _$NeurogineExpenseModel {
     required DateTime date,
   }) = _NeurogineExpenseModel;
 
-  const NeurogineExpenseModel._();
-
   factory NeurogineExpenseModel.fromJson(Map<String, dynamic> json) =>
       _$NeurogineExpenseModelFromJson(json);
-
-  String get amountDisplay => (amount / 100).toStringAsFixed(2);
 }
 
 class NeurogineExpenseModelHiveAdapter

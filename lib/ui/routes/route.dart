@@ -1,7 +1,10 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:personal_expense_tracker/ui/routes/route.gr.dart';
 
 @AutoRouterConfig(replaceInRouteName: 'Screen|Page|Route,Page')
+import 'route.gr.dart';
+
+export 'route.gr.dart';
+
 class NeurogineRouter extends RootStackRouter {
   @override
   RouteType get defaultRouteType => RouteType.material();
