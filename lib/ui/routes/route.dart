@@ -1,10 +1,10 @@
 import 'package:auto_route/auto_route.dart';
 
-@AutoRouterConfig(replaceInRouteName: 'Screen|Page|Route,Page')
 import 'route.gr.dart';
 
 export 'route.gr.dart';
 
+@AutoRouterConfig(replaceInRouteName: 'Screen|Page,Route')
 class NeurogineRouter extends RootStackRouter {
   @override
   RouteType get defaultRouteType => RouteType.material();
@@ -12,10 +12,11 @@ class NeurogineRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
     AutoRoute(
-      page: NeurogineHomeTrackerPage.page,
+      page: NeurogineHomeTrackerRoute.page,
       initial: true,
       children: [
-        AutoRoute(page: NeurogineHomeExpenseListPage.page, initial: true),
+        AutoRoute(page: NeurogineHomeExpenseListRoute.page, initial: true),
+        AutoRoute(page: NeurogineHomeExpenseSummaryRoute.page),
       ],
     ),
   ];
