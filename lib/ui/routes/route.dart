@@ -18,7 +18,7 @@ class NeurogineRouter extends RootStackRouter {
         AutoRoute(page: NeurogineHomeExpenseListRoute.page, initial: true),
         AutoRoute(
           page: NeurogineHomeExpenseSummaryRoute.page,
-          path: '/summary',
+          path: 'summary',
         ),
       ],
     ),
