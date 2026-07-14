@@ -102,6 +102,54 @@ abstract class NeurogineLocalizations {
   /// In en, this message translates to:
   /// **'Personal Expense Tracker'**
   String get appTitle;
+
+  /// No description provided for @dialogAddNewExpense.
+  ///
+  /// In en, this message translates to:
+  /// **'Add New Expense'**
+  String get dialogAddNewExpense;
+
+  /// No description provided for @dialogEditExpense.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Expense'**
+  String get dialogEditExpense;
+
+  /// No description provided for @dialogSearchExpenses.
+  ///
+  /// In en, this message translates to:
+  /// **'Search Expenses'**
+  String get dialogSearchExpenses;
+
+  /// No description provided for @tooltipAddNewExpense.
+  ///
+  /// In en, this message translates to:
+  /// **'Add new expense'**
+  String get tooltipAddNewExpense;
+
+  /// No description provided for @tooltipGenerateExpenses.
+  ///
+  /// In en, this message translates to:
+  /// **'Generate new expenses'**
+  String get tooltipGenerateExpenses;
+
+  /// No description provided for @tooltipDeleteAllExpenses.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete all expenses'**
+  String get tooltipDeleteAllExpenses;
+
+  /// No description provided for @tooltipSearchExpense.
+  ///
+  /// In en, this message translates to:
+  /// **'Search expenses'**
+  String get tooltipSearchExpense;
+
+  /// No description provided for @buttonSubmit.
+  ///
+  /// In en, this message translates to:
+  /// **'SUBMIT'**
+  String get buttonSubmit;
 }
 
 class _NeurogineLocalizationsDelegate

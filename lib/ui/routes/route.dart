@@ -10,9 +10,9 @@ class NeurogineRouter extends RootStackRouter {
   List<AutoRoute> get routes => [
     AutoRoute(
       page: NeurogineHomeTrackerPage.page,
+      initial: true,
       children: [
-        AutoRoute(page: NeurogineHomeTrackerListPage.page),
-        AutoRoute(page: NeurogineHomeTrackerEditPage.page),
+        AutoRoute(page: NeurogineHomeExpenseListPage.page, initial: true),
       ],
     ),
   ];

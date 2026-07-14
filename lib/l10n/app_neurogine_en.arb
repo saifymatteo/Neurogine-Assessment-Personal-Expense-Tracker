@@ -1,3 +1,11 @@
 {
-  "appTitle": "Personal Expense Tracker"
+  "appTitle": "Personal Expense Tracker",
+  "dialogAddNewExpense": "Add New Expense",
+  "dialogEditExpense": "Edit Expense",
+  "dialogSearchExpenses": "Search Expenses",
+  "tooltipAddNewExpense": "Add new expense",
+  "tooltipGenerateExpenses": "Generate new expenses",
+  "tooltipDeleteAllExpenses": "Delete all expenses",
+  "tooltipSearchExpense": "Search expenses",
+  "buttonSubmit": "SUBMIT"
 }
