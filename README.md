@@ -63,7 +63,7 @@ This project make use of barrel file, example is `lib/lib.dart` where the file e
 Currently only support limited languages:
 
 - English (en)
-- Malay (ms)
+- Malay (ms) - AI translated with Gemma4
 
 To add new language, you can made a copy current `lib/l10n/app_neurogine_en.arb` to new file with different suffix.
 
@@ -76,4 +76,4 @@ Example: creating a Malay localizations will require a file called `lib/l10n/app
 
 ## AI Usage
 
-This project was assisted with autocomplete AI via VSCode Github Copilot (free tier). Everything else is solely written by hand with the helps of Microsoft's Bing.
+This project was assisted with autocomplete AI via VSCode Github Copilot (free tier). Everything else is solely written by hand (excluding Localizations) with the helps of Microsoft's Bing.
