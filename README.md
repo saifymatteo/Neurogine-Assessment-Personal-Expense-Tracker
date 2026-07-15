@@ -19,7 +19,7 @@ Project structure was adapted from Ukuya Sdn. Bhd.'s architectural pattern where
 
 This project made a change by utilising `sealed class` to hold UI's state and `repository.dart` to handle the business logic, thus separating data and business logic.
 
-## Structure
+### Structure
 
 Structure follow simple pattern where as everything user see will be in `lib/ui` folder. Each folder have prefix to determine the type of the file themselves.
 
@@ -36,11 +36,11 @@ Prefix:
 - `pg_*` - page
 - `dg_*` - dialog
 
-### Note
+#### Note
 
-This project make use of barrel file, example is `lib/lib.dart` where the file export commonly used file
+This project make use of barrel file, example is `lib/lib.dart` where the file export commonly used files
 
-### Tree Structure
+#### Tree Structure
 
 ```tree
 ├───lib
@@ -60,9 +60,14 @@ This project make use of barrel file, example is `lib/lib.dart` where the file e
 
 ## Localizations
 
-Currently only support English language. To add new language, you can made a copy current `lib/l10n/app_neurogine_en.arb` to new file with different suffix.
+Currently only support limited languages:
 
-Example: creating a Malay localizations will require a file called `lib/l10n/app_neurogine_ms.arb`, then change the values inside the files.
+- English (en)
+- Malay (ms)
+
+To add new language, you can made a copy current `lib/l10n/app_neurogine_en.arb` to new file with different suffix.
+
+Example: creating a Malay localizations will require a file called `lib/l10n/app_neurogine_ms.arb`, then you can proceed to change the values inside the file.
 
 ## Build
 

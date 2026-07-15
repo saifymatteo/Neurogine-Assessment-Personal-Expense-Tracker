@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../../../lib.dart';
 
@@ -67,10 +68,45 @@ class _AppDrawer extends StatelessWidget {
                   context.router.replace(NeurogineHomeExpenseSummaryRoute());
                 },
               ),
+              InkWell(
+                child: Text(
+                  l10n.buttonLanguage,
+                  style: TextStyle(fontSize: 18),
+                ),
+                onTap: () => _onTapLanguage(context),
+              ),
             ],
           ),
         ),
       ),
     );
+  }
+
+  Future<void> _onTapLanguage(BuildContext context) async {
+    final appRepo = context.read<NeurogineAppRepository>();
+
+    final result = await showDialog<NeurogineLocale>(
+      context: context,
+      builder: (context) => Dialog(
+        child: ListView.separated(
+          padding: EdgeInsets.all(16),
+          shrinkWrap: true,
+          itemCount: appRepo.localesMap.length,
+          separatorBuilder: (context, index) => Divider(),
+          itemBuilder: (context, index) {
+            final item = appRepo.localesMap.keys.elementAt(index);
+            return ListTile(
+              title: Text(item.getUiString()),
+              enabled: appRepo.localesMap[item] != appRepo.locale,
+              onTap: () => context.router.maybePop<NeurogineLocale>(item),
+            );
+          },
+        ),
+      ),
+    );
+
+    if (result != null) {
+      appRepo.setLocale(result);
+    }
   }
 }

@@ -6,6 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
 import 'neurogine_localizations_en.dart';
+import 'neurogine_localizations_ms.dart';
 
 // ignore_for_file: type=lint
 
@@ -95,7 +96,10 @@ abstract class NeurogineLocalizations {
       ];
 
   /// A list of this localizations delegate's supported locales.
-  static const List<Locale> supportedLocales = <Locale>[Locale('en')];
+  static const List<Locale> supportedLocales = <Locale>[
+    Locale('en'),
+    Locale('ms'),
+  ];
 
   /// No description provided for @appTitle.
   ///
@@ -210,6 +214,12 @@ abstract class NeurogineLocalizations {
   /// In en, this message translates to:
   /// **'SUBMIT'**
   String get buttonSubmit;
+
+  /// No description provided for @buttonLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get buttonLanguage;
 }
 
 class _NeurogineLocalizationsDelegate
@@ -225,7 +235,7 @@ class _NeurogineLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) =>
-      <String>['en'].contains(locale.languageCode);
+      <String>['en', 'ms'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_NeurogineLocalizationsDelegate old) => false;
@@ -236,6 +246,8 @@ NeurogineLocalizations lookupNeurogineLocalizations(Locale locale) {
   switch (locale.languageCode) {
     case 'en':
       return NeurogineLocalizationsEn();
+    case 'ms':
+      return NeurogineLocalizationsMs();
   }
 
   throw FlutterError(

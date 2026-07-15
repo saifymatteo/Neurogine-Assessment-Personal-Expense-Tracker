@@ -64,4 +64,7 @@ class NeurogineLocalizationsEn extends NeurogineLocalizations {
 
   @override
   String get buttonSubmit => 'SUBMIT';
+
+  @override
+  String get buttonLanguage => 'Language';
 }
